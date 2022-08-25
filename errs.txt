@@ -1,0 +1,503 @@
+sed -i "s|actors/heave_ho|heave_ho|g" heave_ho/model.inc.c
+cc -c Model.c -o model.o -I . -I include/ -DMODELNAME=heave_ho -D_LANGUAGE_C -D_FINALROM -DF3DEX_GBI_2
+In file included from Model.c:22:
+heave_ho/model.inc.c:4:29: error: redefinition of ‘heave_ho_lights_unused1’
+    4 | UNUSED static const Lights1 heave_ho_lights_unused1 = gdSPDefLights1(
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from Model.c:21:
+heave_ho/model.inc.c:4:29: note: previous definition of ‘heave_ho_lights_unused1’ with type ‘Lights1’
+    4 | UNUSED static const Lights1 heave_ho_lights_unused1 = gdSPDefLights1(
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:10:29: error: redefinition of ‘heave_ho_lights_unused2’
+   10 | UNUSED static const Lights1 heave_ho_lights_unused2 = gdSPDefLights1(
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:10:29: note: previous definition of ‘heave_ho_lights_unused2’ with type ‘Lights1’
+   10 | UNUSED static const Lights1 heave_ho_lights_unused2 = gdSPDefLights1(
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:16:29: error: redefinition of ‘heave_ho_lights_unused3’
+   16 | UNUSED static const Lights1 heave_ho_lights_unused3 = gdSPDefLights1(
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:16:29: note: previous definition of ‘heave_ho_lights_unused3’ with type ‘Lights1’
+   16 | UNUSED static const Lights1 heave_ho_lights_unused3 = gdSPDefLights1(
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:22:22: error: redefinition of ‘heave_ho_seg5_lights_0500E968’
+   22 | static const Lights1 heave_ho_seg5_lights_0500E968 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:22:22: note: previous definition of ‘heave_ho_seg5_lights_0500E968’ with type ‘Lights1’
+   22 | static const Lights1 heave_ho_seg5_lights_0500E968 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:28:22: error: redefinition of ‘heave_ho_seg5_lights_0500E980’
+   28 | static const Lights1 heave_ho_seg5_lights_0500E980 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:28:22: note: previous definition of ‘heave_ho_seg5_lights_0500E980’ with type ‘Lights1’
+   28 | static const Lights1 heave_ho_seg5_lights_0500E980 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:34:29: error: redefinition of ‘heave_ho_lights_unused4’
+   34 | UNUSED static const Lights1 heave_ho_lights_unused4 = gdSPDefLights1(
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:34:29: note: previous definition of ‘heave_ho_lights_unused4’ with type ‘Lights1’
+   34 | UNUSED static const Lights1 heave_ho_lights_unused4 = gdSPDefLights1(
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:40:29: error: redefinition of ‘heave_ho_lights_unused5’
+   40 | UNUSED static const Lights1 heave_ho_lights_unused5 = gdSPDefLights1(
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:40:29: note: previous definition of ‘heave_ho_lights_unused5’ with type ‘Lights1’
+   40 | UNUSED static const Lights1 heave_ho_lights_unused5 = gdSPDefLights1(
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:46:31: error: redefinition of ‘heave_ho_seg5_texture_0500E9C8’
+   46 | ALIGNED8 static const Texture heave_ho_seg5_texture_0500E9C8[] = {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:46:31: note: previous definition of ‘heave_ho_seg5_texture_0500E9C8’ with type ‘const Texture[2048]’ {aka ‘const unsigned char[2048]’}
+   46 | ALIGNED8 static const Texture heave_ho_seg5_texture_0500E9C8[] = {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:51:31: error: redefinition of ‘heave_ho_seg5_texture_0500F1C8’
+   51 | ALIGNED8 static const Texture heave_ho_seg5_texture_0500F1C8[] = {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:51:31: note: previous definition of ‘heave_ho_seg5_texture_0500F1C8’ with type ‘const Texture[2048]’ {aka ‘const unsigned char[2048]’}
+   51 | ALIGNED8 static const Texture heave_ho_seg5_texture_0500F1C8[] = {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:56:31: error: redefinition of ‘heave_ho_seg5_texture_0500F9C8’
+   56 | ALIGNED8 static const Texture heave_ho_seg5_texture_0500F9C8[] = {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:56:31: note: previous definition of ‘heave_ho_seg5_texture_0500F9C8’ with type ‘const Texture[4096]’ {aka ‘const unsigned char[4096]’}
+   56 | ALIGNED8 static const Texture heave_ho_seg5_texture_0500F9C8[] = {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:61:31: error: redefinition of ‘heave_ho_seg5_texture_050109C8’
+   61 | ALIGNED8 static const Texture heave_ho_seg5_texture_050109C8[] = {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:61:31: note: previous definition of ‘heave_ho_seg5_texture_050109C8’ with type ‘const Texture[2048]’ {aka ‘const unsigned char[2048]’}
+   61 | ALIGNED8 static const Texture heave_ho_seg5_texture_050109C8[] = {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:66:31: error: redefinition of ‘heave_ho_seg5_texture_050111C8’
+   66 | ALIGNED8 static const Texture heave_ho_seg5_texture_050111C8[] = {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:66:31: note: previous definition of ‘heave_ho_seg5_texture_050111C8’ with type ‘const Texture[512]’ {aka ‘const unsigned char[512]’}
+   66 | ALIGNED8 static const Texture heave_ho_seg5_texture_050111C8[] = {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:71:31: error: redefinition of ‘heave_ho_seg5_texture_050113C8’
+   71 | ALIGNED8 static const Texture heave_ho_seg5_texture_050113C8[] = {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:71:31: note: previous definition of ‘heave_ho_seg5_texture_050113C8’ with type ‘const Texture[2048]’ {aka ‘const unsigned char[2048]’}
+   71 | ALIGNED8 static const Texture heave_ho_seg5_texture_050113C8[] = {
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:76:22: error: redefinition of ‘heave_ho_seg5_lights_05011BC8’
+   76 | static const Lights1 heave_ho_seg5_lights_05011BC8 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:76:22: note: previous definition of ‘heave_ho_seg5_lights_05011BC8’ with type ‘Lights1’
+   76 | static const Lights1 heave_ho_seg5_lights_05011BC8 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:82:22: error: redefinition of ‘heave_ho_seg5_lights_05011BE0’
+   82 | static const Lights1 heave_ho_seg5_lights_05011BE0 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:82:22: note: previous definition of ‘heave_ho_seg5_lights_05011BE0’ with type ‘Lights1’
+   82 | static const Lights1 heave_ho_seg5_lights_05011BE0 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:88:18: error: redefinition of ‘heave_ho_seg5_vertex_05011BF8’
+   88 | static const Vtx heave_ho_seg5_vertex_05011BF8[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:88:18: note: previous definition of ‘heave_ho_seg5_vertex_05011BF8’ with type ‘const Vtx[4]’
+   88 | static const Vtx heave_ho_seg5_vertex_05011BF8[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:96:18: error: redefinition of ‘heave_ho_seg5_vertex_05011C38’
+   96 | static const Vtx heave_ho_seg5_vertex_05011C38[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:96:18: note: previous definition of ‘heave_ho_seg5_vertex_05011C38’ with type ‘const Vtx[6]’
+   96 | static const Vtx heave_ho_seg5_vertex_05011C38[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:106:18: error: redefinition of ‘heave_ho_seg5_vertex_05011C98’
+  106 | static const Vtx heave_ho_seg5_vertex_05011C98[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:106:18: note: previous definition of ‘heave_ho_seg5_vertex_05011C98’ with type ‘const Vtx[10]’
+  106 | static const Vtx heave_ho_seg5_vertex_05011C98[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:120:18: error: redefinition of ‘heave_ho_seg5_vertex_05011D38’
+  120 | static const Vtx heave_ho_seg5_vertex_05011D38[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:120:18: note: previous definition of ‘heave_ho_seg5_vertex_05011D38’ with type ‘const Vtx[6]’
+  120 | static const Vtx heave_ho_seg5_vertex_05011D38[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:130:11: error: redefinition of ‘heave_ho_seg5_dl_05011D98’
+  130 | const Gfx heave_ho_seg5_dl_05011D98[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:130:11: note: previous definition of ‘heave_ho_seg5_dl_05011D98’ with type ‘const Gfx[8]’
+  130 | const Gfx heave_ho_seg5_dl_05011D98[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:142:11: error: redefinition of ‘heave_ho_seg5_dl_05011DE0’
+  142 | const Gfx heave_ho_seg5_dl_05011DE0[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:142:11: note: previous definition of ‘heave_ho_seg5_dl_05011DE0’ with type ‘const Gfx[7]’
+  142 | const Gfx heave_ho_seg5_dl_05011DE0[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:153:11: error: redefinition of ‘heave_ho_seg5_dl_05011E28’
+  153 | const Gfx heave_ho_seg5_dl_05011E28[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:153:11: note: previous definition of ‘heave_ho_seg5_dl_05011E28’ with type ‘const Gfx[8]’
+  153 | const Gfx heave_ho_seg5_dl_05011E28[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:165:11: error: redefinition of ‘heave_ho_seg5_dl_05011E80’
+  165 | const Gfx heave_ho_seg5_dl_05011E80[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:165:11: note: previous definition of ‘heave_ho_seg5_dl_05011E80’ with type ‘const Gfx[6]’
+  165 | const Gfx heave_ho_seg5_dl_05011E80[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:175:11: error: redefinition of ‘heave_ho_seg5_dl_05011EC0’
+  175 | const Gfx heave_ho_seg5_dl_05011EC0[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:175:11: note: previous definition of ‘heave_ho_seg5_dl_05011EC0’ with type ‘const Gfx[18]’
+  175 | const Gfx heave_ho_seg5_dl_05011EC0[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:197:22: error: redefinition of ‘heave_ho_seg5_lights_05011F50’
+  197 | static const Lights1 heave_ho_seg5_lights_05011F50 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:197:22: note: previous definition of ‘heave_ho_seg5_lights_05011F50’ with type ‘Lights1’
+  197 | static const Lights1 heave_ho_seg5_lights_05011F50 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:203:22: error: redefinition of ‘heave_ho_seg5_lights_05011F68’
+  203 | static const Lights1 heave_ho_seg5_lights_05011F68 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:203:22: note: previous definition of ‘heave_ho_seg5_lights_05011F68’ with type ‘Lights1’
+  203 | static const Lights1 heave_ho_seg5_lights_05011F68 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:209:18: error: redefinition of ‘heave_ho_seg5_vertex_05011F80’
+  209 | static const Vtx heave_ho_seg5_vertex_05011F80[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:209:18: note: previous definition of ‘heave_ho_seg5_vertex_05011F80’ with type ‘const Vtx[11]’
+  209 | static const Vtx heave_ho_seg5_vertex_05011F80[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:224:18: error: redefinition of ‘heave_ho_seg5_vertex_05012030’
+  224 | static const Vtx heave_ho_seg5_vertex_05012030[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:224:18: note: previous definition of ‘heave_ho_seg5_vertex_05012030’ with type ‘const Vtx[7]’
+  224 | static const Vtx heave_ho_seg5_vertex_05012030[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:235:11: error: redefinition of ‘heave_ho_seg5_dl_050120A0’
+  235 | const Gfx heave_ho_seg5_dl_050120A0[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:235:11: note: previous definition of ‘heave_ho_seg5_dl_050120A0’ with type ‘const Gfx[10]’
+  235 | const Gfx heave_ho_seg5_dl_050120A0[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:249:11: error: redefinition of ‘heave_ho_seg5_dl_05012100’
+  249 | const Gfx heave_ho_seg5_dl_05012100[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:249:11: note: previous definition of ‘heave_ho_seg5_dl_05012100’ with type ‘const Gfx[7]’
+  249 | const Gfx heave_ho_seg5_dl_05012100[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:260:11: error: redefinition of ‘heave_ho_seg5_dl_05012148’
+  260 | const Gfx heave_ho_seg5_dl_05012148[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:260:11: note: previous definition of ‘heave_ho_seg5_dl_05012148’ with type ‘const Gfx[13]’
+  260 | const Gfx heave_ho_seg5_dl_05012148[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:277:22: error: redefinition of ‘heave_ho_seg5_lights_050121B0’
+  277 | static const Lights1 heave_ho_seg5_lights_050121B0 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:277:22: note: previous definition of ‘heave_ho_seg5_lights_050121B0’ with type ‘Lights1’
+  277 | static const Lights1 heave_ho_seg5_lights_050121B0 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:283:22: error: redefinition of ‘heave_ho_seg5_lights_050121C8’
+  283 | static const Lights1 heave_ho_seg5_lights_050121C8 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:283:22: note: previous definition of ‘heave_ho_seg5_lights_050121C8’ with type ‘Lights1’
+  283 | static const Lights1 heave_ho_seg5_lights_050121C8 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:289:18: error: redefinition of ‘heave_ho_seg5_vertex_050121E0’
+  289 | static const Vtx heave_ho_seg5_vertex_050121E0[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:289:18: note: previous definition of ‘heave_ho_seg5_vertex_050121E0’ with type ‘const Vtx[11]’
+  289 | static const Vtx heave_ho_seg5_vertex_050121E0[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:304:18: error: redefinition of ‘heave_ho_seg5_vertex_05012290’
+  304 | static const Vtx heave_ho_seg5_vertex_05012290[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:304:18: note: previous definition of ‘heave_ho_seg5_vertex_05012290’ with type ‘const Vtx[7]’
+  304 | static const Vtx heave_ho_seg5_vertex_05012290[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:315:11: error: redefinition of ‘heave_ho_seg5_dl_05012300’
+  315 | const Gfx heave_ho_seg5_dl_05012300[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:315:11: note: previous definition of ‘heave_ho_seg5_dl_05012300’ with type ‘const Gfx[10]’
+  315 | const Gfx heave_ho_seg5_dl_05012300[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:329:11: error: redefinition of ‘heave_ho_seg5_dl_05012360’
+  329 | const Gfx heave_ho_seg5_dl_05012360[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:329:11: note: previous definition of ‘heave_ho_seg5_dl_05012360’ with type ‘const Gfx[7]’
+  329 | const Gfx heave_ho_seg5_dl_05012360[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:340:11: error: redefinition of ‘heave_ho_seg5_dl_050123A8’
+  340 | const Gfx heave_ho_seg5_dl_050123A8[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:340:11: note: previous definition of ‘heave_ho_seg5_dl_050123A8’ with type ‘const Gfx[13]’
+  340 | const Gfx heave_ho_seg5_dl_050123A8[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:357:22: error: redefinition of ‘heave_ho_seg5_lights_05012410’
+  357 | static const Lights1 heave_ho_seg5_lights_05012410 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:357:22: note: previous definition of ‘heave_ho_seg5_lights_05012410’ with type ‘Lights1’
+  357 | static const Lights1 heave_ho_seg5_lights_05012410 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:363:22: error: redefinition of ‘heave_ho_seg5_lights_05012428’
+  363 | static const Lights1 heave_ho_seg5_lights_05012428 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:363:22: note: previous definition of ‘heave_ho_seg5_lights_05012428’ with type ‘Lights1’
+  363 | static const Lights1 heave_ho_seg5_lights_05012428 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:369:18: error: redefinition of ‘heave_ho_seg5_vertex_05012440’
+  369 | static const Vtx heave_ho_seg5_vertex_05012440[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:369:18: note: previous definition of ‘heave_ho_seg5_vertex_05012440’ with type ‘const Vtx[4]’
+  369 | static const Vtx heave_ho_seg5_vertex_05012440[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:377:18: error: redefinition of ‘heave_ho_seg5_vertex_05012480’
+  377 | static const Vtx heave_ho_seg5_vertex_05012480[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:377:18: note: previous definition of ‘heave_ho_seg5_vertex_05012480’ with type ‘const Vtx[14]’
+  377 | static const Vtx heave_ho_seg5_vertex_05012480[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:395:11: error: redefinition of ‘heave_ho_seg5_dl_05012560’
+  395 | const Gfx heave_ho_seg5_dl_05012560[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:395:11: note: previous definition of ‘heave_ho_seg5_dl_05012560’ with type ‘const Gfx[8]’
+  395 | const Gfx heave_ho_seg5_dl_05012560[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:407:11: error: redefinition of ‘heave_ho_seg5_dl_050125A8’
+  407 | const Gfx heave_ho_seg5_dl_050125A8[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:407:11: note: previous definition of ‘heave_ho_seg5_dl_050125A8’ with type ‘const Gfx[7]’
+  407 | const Gfx heave_ho_seg5_dl_050125A8[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:418:11: error: redefinition of ‘heave_ho_seg5_dl_050125F8’
+  418 | const Gfx heave_ho_seg5_dl_050125F8[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:418:11: note: previous definition of ‘heave_ho_seg5_dl_050125F8’ with type ‘const Gfx[15]’
+  418 | const Gfx heave_ho_seg5_dl_050125F8[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:437:18: error: redefinition of ‘heave_ho_seg5_vertex_05012670’
+  437 | static const Vtx heave_ho_seg5_vertex_05012670[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:437:18: note: previous definition of ‘heave_ho_seg5_vertex_05012670’ with type ‘const Vtx[4]’
+  437 | static const Vtx heave_ho_seg5_vertex_05012670[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:445:11: error: redefinition of ‘heave_ho_seg5_dl_050126B0’
+  445 | const Gfx heave_ho_seg5_dl_050126B0[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:445:11: note: previous definition of ‘heave_ho_seg5_dl_050126B0’ with type ‘const Gfx[6]’
+  445 | const Gfx heave_ho_seg5_dl_050126B0[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:455:11: error: redefinition of ‘heave_ho_seg5_dl_050126E8’
+  455 | const Gfx heave_ho_seg5_dl_050126E8[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:455:11: note: previous definition of ‘heave_ho_seg5_dl_050126E8’ with type ‘const Gfx[14]’
+  455 | const Gfx heave_ho_seg5_dl_050126E8[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:473:22: error: redefinition of ‘heave_ho_seg5_lights_05012758’
+  473 | static const Lights1 heave_ho_seg5_lights_05012758 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:473:22: note: previous definition of ‘heave_ho_seg5_lights_05012758’ with type ‘Lights1’
+  473 | static const Lights1 heave_ho_seg5_lights_05012758 = gdSPDefLights1(
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:479:18: error: redefinition of ‘heave_ho_seg5_vertex_05012770’
+  479 | static const Vtx heave_ho_seg5_vertex_05012770[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:479:18: note: previous definition of ‘heave_ho_seg5_vertex_05012770’ with type ‘const Vtx[4]’
+  479 | static const Vtx heave_ho_seg5_vertex_05012770[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:487:11: error: redefinition of ‘heave_ho_seg5_dl_050127B0’
+  487 | const Gfx heave_ho_seg5_dl_050127B0[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:487:11: note: previous definition of ‘heave_ho_seg5_dl_050127B0’ with type ‘const Gfx[8]’
+  487 | const Gfx heave_ho_seg5_dl_050127B0[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:499:11: error: redefinition of ‘heave_ho_seg5_dl_050127F8’
+  499 | const Gfx heave_ho_seg5_dl_050127F8[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:499:11: note: previous definition of ‘heave_ho_seg5_dl_050127F8’ with type ‘const Gfx[14]’
+  499 | const Gfx heave_ho_seg5_dl_050127F8[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:517:18: error: redefinition of ‘heave_ho_seg5_vertex_05012868’
+  517 | static const Vtx heave_ho_seg5_vertex_05012868[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:517:18: note: previous definition of ‘heave_ho_seg5_vertex_05012868’ with type ‘const Vtx[16]’
+  517 | static const Vtx heave_ho_seg5_vertex_05012868[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:537:18: error: redefinition of ‘heave_ho_seg5_vertex_05012968’
+  537 | static const Vtx heave_ho_seg5_vertex_05012968[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:537:18: note: previous definition of ‘heave_ho_seg5_vertex_05012968’ with type ‘const Vtx[16]’
+  537 | static const Vtx heave_ho_seg5_vertex_05012968[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:557:18: error: redefinition of ‘heave_ho_seg5_vertex_05012A68’
+  557 | static const Vtx heave_ho_seg5_vertex_05012A68[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:557:18: note: previous definition of ‘heave_ho_seg5_vertex_05012A68’ with type ‘const Vtx[16]’
+  557 | static const Vtx heave_ho_seg5_vertex_05012A68[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:577:18: error: redefinition of ‘heave_ho_seg5_vertex_05012B68’
+  577 | static const Vtx heave_ho_seg5_vertex_05012B68[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:577:18: note: previous definition of ‘heave_ho_seg5_vertex_05012B68’ with type ‘const Vtx[16]’
+  577 | static const Vtx heave_ho_seg5_vertex_05012B68[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:597:18: error: redefinition of ‘heave_ho_seg5_vertex_05012C68’
+  597 | static const Vtx heave_ho_seg5_vertex_05012C68[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:597:18: note: previous definition of ‘heave_ho_seg5_vertex_05012C68’ with type ‘const Vtx[16]’
+  597 | static const Vtx heave_ho_seg5_vertex_05012C68[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:617:18: error: redefinition of ‘heave_ho_seg5_vertex_05012D68’
+  617 | static const Vtx heave_ho_seg5_vertex_05012D68[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:617:18: note: previous definition of ‘heave_ho_seg5_vertex_05012D68’ with type ‘const Vtx[16]’
+  617 | static const Vtx heave_ho_seg5_vertex_05012D68[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:637:18: error: redefinition of ‘heave_ho_seg5_vertex_05012E68’
+  637 | static const Vtx heave_ho_seg5_vertex_05012E68[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:637:18: note: previous definition of ‘heave_ho_seg5_vertex_05012E68’ with type ‘const Vtx[16]’
+  637 | static const Vtx heave_ho_seg5_vertex_05012E68[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:657:18: error: redefinition of ‘heave_ho_seg5_vertex_05012F68’
+  657 | static const Vtx heave_ho_seg5_vertex_05012F68[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:657:18: note: previous definition of ‘heave_ho_seg5_vertex_05012F68’ with type ‘const Vtx[16]’
+  657 | static const Vtx heave_ho_seg5_vertex_05012F68[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:677:18: error: redefinition of ‘heave_ho_seg5_vertex_05013068’
+  677 | static const Vtx heave_ho_seg5_vertex_05013068[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:677:18: note: previous definition of ‘heave_ho_seg5_vertex_05013068’ with type ‘const Vtx[12]’
+  677 | static const Vtx heave_ho_seg5_vertex_05013068[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:693:18: error: redefinition of ‘heave_ho_seg5_vertex_05013128’
+  693 | static const Vtx heave_ho_seg5_vertex_05013128[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:693:18: note: previous definition of ‘heave_ho_seg5_vertex_05013128’ with type ‘const Vtx[16]’
+  693 | static const Vtx heave_ho_seg5_vertex_05013128[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:713:18: error: redefinition of ‘heave_ho_seg5_vertex_05013228’
+  713 | static const Vtx heave_ho_seg5_vertex_05013228[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:713:18: note: previous definition of ‘heave_ho_seg5_vertex_05013228’ with type ‘const Vtx[16]’
+  713 | static const Vtx heave_ho_seg5_vertex_05013228[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:733:18: error: redefinition of ‘heave_ho_seg5_vertex_05013328’
+  733 | static const Vtx heave_ho_seg5_vertex_05013328[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:733:18: note: previous definition of ‘heave_ho_seg5_vertex_05013328’ with type ‘const Vtx[16]’
+  733 | static const Vtx heave_ho_seg5_vertex_05013328[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:753:18: error: redefinition of ‘heave_ho_seg5_vertex_05013428’
+  753 | static const Vtx heave_ho_seg5_vertex_05013428[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:753:18: note: previous definition of ‘heave_ho_seg5_vertex_05013428’ with type ‘const Vtx[16]’
+  753 | static const Vtx heave_ho_seg5_vertex_05013428[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:773:18: error: redefinition of ‘heave_ho_seg5_vertex_05013528’
+  773 | static const Vtx heave_ho_seg5_vertex_05013528[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:773:18: note: previous definition of ‘heave_ho_seg5_vertex_05013528’ with type ‘const Vtx[16]’
+  773 | static const Vtx heave_ho_seg5_vertex_05013528[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:793:18: error: redefinition of ‘heave_ho_seg5_vertex_05013628’
+  793 | static const Vtx heave_ho_seg5_vertex_05013628[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:793:18: note: previous definition of ‘heave_ho_seg5_vertex_05013628’ with type ‘const Vtx[16]’
+  793 | static const Vtx heave_ho_seg5_vertex_05013628[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:813:18: error: redefinition of ‘heave_ho_seg5_vertex_05013728’
+  813 | static const Vtx heave_ho_seg5_vertex_05013728[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:813:18: note: previous definition of ‘heave_ho_seg5_vertex_05013728’ with type ‘const Vtx[16]’
+  813 | static const Vtx heave_ho_seg5_vertex_05013728[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:833:18: error: redefinition of ‘heave_ho_seg5_vertex_05013828’
+  833 | static const Vtx heave_ho_seg5_vertex_05013828[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:833:18: note: previous definition of ‘heave_ho_seg5_vertex_05013828’ with type ‘const Vtx[16]’
+  833 | static const Vtx heave_ho_seg5_vertex_05013828[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:853:18: error: redefinition of ‘heave_ho_seg5_vertex_05013928’
+  853 | static const Vtx heave_ho_seg5_vertex_05013928[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:853:18: note: previous definition of ‘heave_ho_seg5_vertex_05013928’ with type ‘const Vtx[16]’
+  853 | static const Vtx heave_ho_seg5_vertex_05013928[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:873:18: error: redefinition of ‘heave_ho_seg5_vertex_05013A28’
+  873 | static const Vtx heave_ho_seg5_vertex_05013A28[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:873:18: note: previous definition of ‘heave_ho_seg5_vertex_05013A28’ with type ‘const Vtx[16]’
+  873 | static const Vtx heave_ho_seg5_vertex_05013A28[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:893:18: error: redefinition of ‘heave_ho_seg5_vertex_05013B28’
+  893 | static const Vtx heave_ho_seg5_vertex_05013B28[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:893:18: note: previous definition of ‘heave_ho_seg5_vertex_05013B28’ with type ‘const Vtx[16]’
+  893 | static const Vtx heave_ho_seg5_vertex_05013B28[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:913:18: error: redefinition of ‘heave_ho_seg5_vertex_05013C28’
+  913 | static const Vtx heave_ho_seg5_vertex_05013C28[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:913:18: note: previous definition of ‘heave_ho_seg5_vertex_05013C28’ with type ‘const Vtx[16]’
+  913 | static const Vtx heave_ho_seg5_vertex_05013C28[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:933:18: error: redefinition of ‘heave_ho_seg5_vertex_05013D28’
+  933 | static const Vtx heave_ho_seg5_vertex_05013D28[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:933:18: note: previous definition of ‘heave_ho_seg5_vertex_05013D28’ with type ‘const Vtx[16]’
+  933 | static const Vtx heave_ho_seg5_vertex_05013D28[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:953:18: error: redefinition of ‘heave_ho_seg5_vertex_05013E28’
+  953 | static const Vtx heave_ho_seg5_vertex_05013E28[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:953:18: note: previous definition of ‘heave_ho_seg5_vertex_05013E28’ with type ‘const Vtx[16]’
+  953 | static const Vtx heave_ho_seg5_vertex_05013E28[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:973:18: error: redefinition of ‘heave_ho_seg5_vertex_05013F28’
+  973 | static const Vtx heave_ho_seg5_vertex_05013F28[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:973:18: note: previous definition of ‘heave_ho_seg5_vertex_05013F28’ with type ‘const Vtx[16]’
+  973 | static const Vtx heave_ho_seg5_vertex_05013F28[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:993:18: error: redefinition of ‘heave_ho_seg5_vertex_05014028’
+  993 | static const Vtx heave_ho_seg5_vertex_05014028[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:993:18: note: previous definition of ‘heave_ho_seg5_vertex_05014028’ with type ‘const Vtx[16]’
+  993 | static const Vtx heave_ho_seg5_vertex_05014028[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:1013:18: error: redefinition of ‘heave_ho_seg5_vertex_05014128’
+ 1013 | static const Vtx heave_ho_seg5_vertex_05014128[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:1013:18: note: previous definition of ‘heave_ho_seg5_vertex_05014128’ with type ‘const Vtx[6]’
+ 1013 | static const Vtx heave_ho_seg5_vertex_05014128[] = {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:1023:11: error: redefinition of ‘heave_ho_seg5_dl_05014188’
+ 1023 | const Gfx heave_ho_seg5_dl_05014188[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:1023:11: note: previous definition of ‘heave_ho_seg5_dl_05014188’ with type ‘const Gfx[67]’
+ 1023 | const Gfx heave_ho_seg5_dl_05014188[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:1094:11: error: redefinition of ‘heave_ho_seg5_dl_05014560’
+ 1094 | const Gfx heave_ho_seg5_dl_05014560[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:1094:11: note: previous definition of ‘heave_ho_seg5_dl_05014560’ with type ‘const Gfx[9]’
+ 1094 | const Gfx heave_ho_seg5_dl_05014560[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:1107:11: error: redefinition of ‘heave_ho_seg5_dl_050145D0’
+ 1107 | const Gfx heave_ho_seg5_dl_050145D0[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:1107:11: note: previous definition of ‘heave_ho_seg5_dl_050145D0’ with type ‘const Gfx[67]’
+ 1107 | const Gfx heave_ho_seg5_dl_050145D0[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:1178:11: error: redefinition of ‘heave_ho_seg5_dl_050149A8’
+ 1178 | const Gfx heave_ho_seg5_dl_050149A8[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:1178:11: note: previous definition of ‘heave_ho_seg5_dl_050149A8’ with type ‘const Gfx[67]’
+ 1178 | const Gfx heave_ho_seg5_dl_050149A8[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:1249:11: error: redefinition of ‘heave_ho_seg5_dl_05014D80’
+ 1249 | const Gfx heave_ho_seg5_dl_05014D80[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+heave_ho/model.inc.c:1249:11: note: previous definition of ‘heave_ho_seg5_dl_05014D80’ with type ‘const Gfx[7]’
+ 1249 | const Gfx heave_ho_seg5_dl_05014D80[] = {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Makefile:24: model.o] Error 1
