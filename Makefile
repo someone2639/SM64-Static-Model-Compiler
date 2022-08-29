@@ -14,7 +14,7 @@ TEXTUREFILES := $(wildcard $(MODELNAME)/*.png)
 TEXTURE_OBJS := $(foreach texture, $(TEXTUREFILES), $(texture:.png=.inc.c))
 
 
-all: model.o
+all: model.bin
 
 %.inc.c: %.png
 	./n64graphics -s u8 -i $@ -g $< -f $(lastword ,$(subst ., ,$(basename $<)))
@@ -25,8 +25,12 @@ intermediate.o: Model.c $(TEXTURE_OBJS) $(MODELNAME)/model.inc.c $(MODELNAME)/ge
 
 model.o: intermediate.o
 	ld -T link.x -o $@ $<
-	echo "            addr                       |offset          |symbol name" > map
-	objdump -t $@ | tail -n +6 >> map
+	echo "            addr|          offset|             symbol name" > map
+	objdump -t $@ | tail -n +6 | awk '{print $$1,$$5,$$6}' >> map
+	objdump -t $@ | tail -n +6 | awk '{print ".definelabel",$$6",","0x"$$1}' | sed "s/\.definelabel , 0x//g" >> armipslabels
+
+model.bin: model.o
+	objcopy $< $@ -O binary
 
 clean:
-	rm -f -r model.o intermediate.o
+	rm -f -r model.o intermediate.o model.bin map armipslabels
